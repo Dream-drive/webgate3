@@ -1,0 +1,508 @@
+
+/* Global styles */
+
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #242222;   
+}
+
+p b{
+  font-size: 42px;
+  color: rgb(250, 250, 250);
+  position: relative;
+  
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Header styles */
+
+header {
+	background-image: url('image/b12.png');
+  	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 	height: 120px;
+  	transition: all 0.3s ease-in-out;
+  	position: fixed;
+  	top: 0;
+ 	left: 0;
+  	width: 100%;
+ 	z-index: 100; 
+}
+
+header, .logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.webgate {
+	width: 350px;
+    margin-left: -80px;
+	
+	
+}
+header nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-left: -50px;
+  }
+
+header nav ul li {
+	margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+	margin-right: 0;
+  }
+  
+ header nav ul li a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease-in-out;
+
+  }
+  
+  header nav ul li a:hover {
+	color: #5eb2e0;
+  }
+
+  header.fixed {
+	background-color: white;
+	height: 92px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10px;
+	
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	font-size: 1.2rem;
+	
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	margin-left: auto;
+	position: absolute;
+  }
+
+/* Hero section styles */
+
+.hero {
+	background-image: url("image/b12.png");
+	padding: 50px;
+	margin-bottom: 70px;
+	width: 100%;
+	height: 700px;
+}
+.hero-div{
+     flex-direction: column;
+	align-items: center;
+	text-align: center;
+  	color: black;
+	z-index: 1;
+}
+.hero-div p b{
+    color: rgb(2, 8, 26);
+}
+.hero-div .p2{
+	margin-bottom: 50px;
+
+}
+.par{
+    text-align: center;
+	font-size: 20px;
+}
+
+.par b{
+    color:  rgb(2, 8, 26);
+    font-size: 26px;
+}
+
+
+.hero h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 30px;
+}
+.cta-button {
+	display: inline-block;
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease-in-out;
+	margin-bottom: 20px;
+	
+}
+
+.cta-button:hover {
+background-color: #444;
+}
+
+
+.about-us{
+    text-align: center;
+}
+/* service section styles */
+
+
+.services {
+	margin: 20px;
+	margin-bottom: 20px;
+	max-width: 400px;
+	background-color: #fff;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	display: inline-block;
+	}
+	.button-two{
+	display: inline-block;
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease-in-out;
+	margin-bottom: 20px;
+	margin-left: 110px;
+	}
+	.services img {
+	width: 95%;
+	height: 150px;
+	object-fit: cover;
+	}
+	.services h3 {
+	font-size: 1.5rem;
+	color: #333;
+	margin: 20px;
+	}
+	.services p {
+		font-size: 1.2rem;
+		color: #777;
+		margin: 20px;
+	}
+	
+	.service-section h2{
+	font-size: 2.2rem;
+	text-align: center;
+	}
+	
+	
+	.image-box {
+		position: relative; /* Make the container the reference for absolute positioning */
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-top: 70px;
+	}
+	
+	.background-image {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.top-image {
+		position: absolute; /* Position the image on top of the background image */
+		bottom: 100px; /* Adjust top position as needed */
+		left: 520px; /* Adjust left position as needed */
+		width: 100px;
+		height: 100px;
+		z-index: 1; /* Ensure the top image appears above the background image */
+	}
+	
+	img.webserver-icon{
+		z-index: 10;
+	}
+	.headbox{
+		color: white;
+		font-size: 43px;
+		position: absolute; /* Position the image on top of the background image */
+		bottom: 50px; /* Adjust top position as needed */
+		left: 650px; /* Adjust left position as needed */
+		z-index: 1; /* Ensure the top image appears above the background image */
+	}
+	.gate{
+		color: lightblue;
+		font-size: 39px;
+		position: absolute; /* Position the image on top of the background image */
+		top: 10px; /* Adjust top position as needed */
+		left: 10px; /* Adjust left position as needed */
+		z-index: 1; /* Ensure the top image appears above the background image */
+		font-family: 'Times New Roman', Times, serif;
+	}
+
+/*courses end*/
+
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end; /* Align cards to the bottom */
+	border-radius: 7px;
+	padding: 20px;
+	margin-top: 30px;
+	width: 100%;
+	margin: 0 auto; /* Center the container horizontally */
+	height: 600px; /* Specify a height for better alignment */
+	position: relative;
+}
+
+.heading {
+	font-size: 55px;
+	color: black;
+	text-align: left;
+	margin-bottom: 30px;
+	align-self: flex-start;
+	margin-left: 20px;
+}
+
+.paragraph {
+	text-align: left;
+	align-self: flex-start;
+	font-size: 24px;
+	margin-bottom: 10px;
+	width: 600px;
+	margin-left: 20px;
+}
+
+.cards-container {
+	display: flex;
+	justify-content: center; /* Center the cards horizontally */
+}
+
+.cards-container a {
+	text-decoration: none;
+}
+
+.card {
+	margin: 20px;
+	max-width: 500px;
+	height: 200px;
+	background-color: #041263;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	flex: 1; /* Allow cards to take equal horizontal space */
+	padding: 15px;
+	margin-top: 40px;
+	margin-left: 20px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.card:hover {
+	background-color: white;
+}
+
+.card p {
+	font-size: 24px;
+	color: white;
+	line-height: 1.5;
+	margin-top: 40px;
+}
+.card:hover p{
+	color: #041263;
+}
+
+
+
+.mydiv{
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+	  margin-bottom: 70px;
+	  margin-top: 70px;
+	  padding: 20px;
+	  width: 100%;
+	  height: 610px;
+	  border-radius: 7px;
+	  position: relative;
+    }
+	
+	.mydiv img{
+	position: absolute;
+    top: 0.5px;
+    right: 0px;
+    width: 490px; /* Adjust the width of the image */
+	bottom: 40px;
+    height: 610px; /* Maintain aspect ratio */
+	border-radius: 7px;
+	
+	}	
+    p{
+        color: rgb(8, 7, 7);
+		font-size: 1.4rem;
+		
+    }
+    .first{
+        font-size: 2.5rem;
+    }
+	.second{
+		margin-top: 40px;
+		font-size: 28px;
+	}
+	.super{
+		display: inline-block;
+		width: 160px;
+		margin-bottom: 50px;
+		margin-top: 30px;
+	}
+
+	
+span{
+	color: #4d4b64;
+}
+
+
+
+
+
+.content {
+	width: 100%;
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+}
+.content p {
+	margin-bottom: 80px;
+}
+
+.next {
+	font-weight: bold;
+	font-size: 32px;
+	color: #001da0;
+	text-align: left;
+}
+
+.service-list {
+	
+	width: 840px;
+	height: 200px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 620px;
+	display: inline-block;
+	margin-bottom: 300px;
+}
+.service-list ul {
+	list-style-type: disc;
+	padding-left: 20px;
+	font-size: 30px;
+	list-style-type: none;
+	display: inline-block;
+	margin-bottom: 80px;
+
+}
+.content .previous{
+	position: absolute;
+	top: 750%;
+	left: 10%;
+	font-size: 45px;
+	margin-top: -200px;
+}
+
+
+/* Footer styles */
+
+
+
+footer {
+background-color: #0976b1;
+color: black;
+padding: 50px;
+}
+.logo h1{
+	margin-right: 350px;
+}
+.footer-content {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.contact-us p {
+margin: 10px 0;
+color: black;
+}
+
+.social-media li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.social-media img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 50%;
+transition: transform 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+transform: scale(1.1);
+}
+
+.footer-bottom {
+background-color: #5eb2e0;
+padding: 20px;
+text-align: center;
+}
+
+.footer-bottom p {
+color: black;
+font-size: 0.9rem;
+}

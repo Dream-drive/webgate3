@@ -1,0 +1,699 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEBGENIE - Web Development Courses</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <style> 
+/* Global styles */
+
+#container {
+    position: relative;
+    width: 400px;
+    height: 385px;
+    margin: 0 auto;
+    overflow: hidden;
+    bottom: 400px;
+  }
+  #images {
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  #images img {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-radius: 20px;
+  }
+
+  .image-one{
+    margin-bottom: 9%;
+    width: 40%;
+    height: 550px;
+    margin-top: 9%;
+    margin-left: 5%;
+  }
+    .image-two{
+    margin-bottom: 9%;
+    width: 40%;
+    height: 500px;
+    margin-top: 9%;
+    margin-left: 9%;
+    }
+  .container-one{
+    display: flex;
+  }
+  .mac{
+    width: 90%;
+    height: 600px;
+    margin-left: 30px;
+  }
+  .container{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+.container p{
+    text-align: left;
+    width: 528px;
+    margin-left: 30px;
+}
+.container h2{
+    margin-left: 30px;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(18, 146, 185);
+    transition: color 0.3s ease;
+}
+.container a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.container .mac p{
+    display: inline-block;
+}
+
+.container img{
+    transition: transform 0.3s ease;
+  }
+
+  .container img:hover{
+    transform: scale(1.2);
+  }
+
+
+.container-two img{
+    transition: transform 0.3s ease;
+  }
+
+  .container-two img:hover{
+    transform: scale(1.2);
+  }
+
+.container-two p{
+    text-align: left;
+    width: 730px;
+}
+.container-two .bthree p{
+    display: inline-block;
+}
+.container-two{
+margin-left: 40px;
+}
+.container-two a{
+    text-decoration: none;
+    color: rgb(18, 146, 185);
+    transition: color 0.3s ease;
+}
+.container-two a:hover{
+    color: black;
+}
+.bthree{
+    width: 95%;
+    height: 600px;
+}
+
+.container-three img{
+  width: 400px;
+  margin-left: 10px;
+
+}
+.container-three p{
+  width: 410px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.container-three{
+  width: 400px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 35px;
+  display: inline-block;
+}
+.container-three .date{
+  margin-bottom: 20px;
+  color: #aaa7a7;
+}
+.container-three .par{
+  margin-bottom: 10px;
+}
+ .container-three, .par, a{
+  text-decoration: none;
+}
+a.linker:hover{
+  color: #4b77d8;
+}
+
+
+.container-four{
+  width: 400px;
+  margin-left: 20px;
+  vertical-align: top;
+  margin-top: 35px;
+  display: inline-block;
+}
+.container-four .date{
+  margin-bottom: 20px;
+  color: #aaa7a7;
+}
+.container-four .para{
+  margin-bottom: 10px;
+}
+.container-four p{
+  text-align: left;
+}
+.container-four, .para, a{
+  text-decoration: none;
+}
+a.link:hover{
+  color: #4b77d8;
+}
+.container-five{
+  width: 400px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 35px;
+  display: inline-block;
+}
+.container-five, .date{
+  text-align: left;
+
+}
+.par, .para{
+  text-align: left;
+
+}
+.container-six{
+  width: 400px;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: 35px;
+  display: inline-block;
+  text-align: left;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #242222;   
+    
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header styles */
+
+header {
+    background-image: url('image/blg1.jpg');
+  	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  	height: 120px;
+  	transition: all 0.3s ease-in-out;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+    z-index: 100; 
+}
+
+header, .logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.webgate{
+    width: 350px;
+    margin-left: -80px;
+	
+}
+header nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 20px;
+}
+
+header nav ul li {
+	margin-right: 20px;
+    margin-left: 1px;
+  }
+  
+  header nav ul li:last-child {
+	margin-right: 0;
+  }
+  
+ header nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  header nav ul li a:hover {
+	color: #5eb2e0;
+  }
+
+  header.fixed {
+	background-color: #041263;
+	height: 92px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10px;
+    
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	margin-left: auto;
+	position: absolute;
+  }
+
+/* Hero section styles */
+
+.hero {
+    background-image: url("image/blg1.jpg");
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.head-two{
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 7%;
+    width: 60%;
+    margin-left: 20%;
+}
+.head-two,p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 30px;
+}
+
+.about-us{
+    text-align: center;
+}
+/* Courses section styles */
+
+.b1:hover{
+background-color: rgb(202, 201, 201);
+color: black;
+}
+
+.video-container{
+  margin-left: 200px;
+  margin-bottom: 10%;
+}
+
+/* Footer styles */
+
+footer {
+background-color: #d4d3d3;
+color: #000000;
+padding: 50px;
+
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.contact-us p {
+margin: 10px 0;
+}
+
+.social-media li {
+display: inline-block;
+margin-right: 10px;
+}
+
+.social-media img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 50%;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+transform: scale(1.1);
+}
+
+.footer-bottom {
+background-color:  #d4d3d3;
+padding: 20px;
+text-align: center;
+}
+
+.footer-bottom p {
+color: #000000;
+font-size: 0.9rem;
+}
+
+/* Forms */
+
+
+    .signup-form {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .signup-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #667066;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .signup-form h2{
+      text-align: center;
+      font-size: 40px;
+    }
+  
+#myButton {
+  height: 50px;
+  width: 90px;
+  background-color: #0d0ac9;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+
+    <header>
+
+        <a href="index.html">
+			<img src="image/logo.png" class="webgate">
+		</a>
+
+		<div class="logo">
+		    <nav>
+			    <ul>
+            <li><a href="service.html">Services</a></li>
+				    <li><a href="courses.html">Courses</a></li>
+				    <li><a href="about.html">About</a></li>
+				    <li><a href="contact.html">Contact</a></li>
+				    <li><a href="blog.html">Blog</a></li>
+			    </ul>
+            </nav>
+        </div>
+	</header>
+
+    <main>
+        <section class="hero">
+           
+            <div><br><br>
+                
+            
+        </section>
+        <h1 class="head-two">Our blog</h1>
+        <p>Discover career tips, tech insights, spotlights on our talent, inspiration 
+            from global leaders and stories from our ALX community across Africa</p>
+<br><br><br>    
+            <div class="container-one">
+                <div class="container">
+                    <img src="image/mac (14).jpg" class="mac" alt="blog-details">
+                    <br><br>
+                    <p class="date">June 20, 2023</p>
+
+                    <a href="#"><h2>Unlocking Growth: Embrace Technology Advancements
+                         and Thrive in the Digital Age</h2></a>
+                     <p>
+                        In today's rapidly evolving digital landscape, 
+                        technology advancements have become a driving force behind the success 
+                        of businesses.As businesses strive to stay competitive and meet the 
+                        ever-changing needs of consumers, one crucial step is moving operations 
+                        online.In this blog post, we will explore the significance of embracing
+                        technology advancements and discuss why moving your business online 
+                        is not just beneficial but essential for long-term growth and success.
+                        <a href="#">Embracing Technological Advancements: Why Moving Your Business
+                            Online is Essential.</a>
+                    </p>
+                </div>
+                                                        
+                <div class="container-two">
+                    <img src="image/b3.jpg" class="bthree" alt="">
+                    <br><br>
+                    <p class="date">January 10, 2023</p>
+
+                    <a href="http://bit.ly/46X8n4V"><h2>Responsive Web Design: Optimizing Websites for 
+                        all Devices</h2></a>
+                     <p>In today's rapidly evolving digital landscape, 
+                    technology advancements have become a driving force behind the success 
+                    of businesses.As businesses strive to stay competitive and meet the 
+                    ever-changing needs of consumers, one crucial step is moving operations 
+                    online.In this blog post, we will explore the significance of embracing
+                    technology advancements and discuss why moving your business online 
+                    is not just beneficial but essential for long-term growth and success.
+                    <a href="https://youtu.be/KbYoUIblHsI?si=Lpbsb9FDLoTjSKtD">Embracing Technological Advancements: Why Moving Your Business
+                     Online is Essential.</a>
+                     </p>
+                </div>   
+            </div>
+          
+            
+            <div>
+                <div class="container-three">
+                  <a href="#" class="link"> 
+                  <img src="image/mac (7).jpg" alt="">
+                  <p class="par">These instructions are for Photoshop </p></a>
+                  <p class="date">January 10, 2023</p>
+                  <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                    CS4 is very similar.
+                    Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                    Monitor RGB.
+                    Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                    Working RGB. This must be done for every single document you work on.
+                    Step 3: Ensure View → Proof Colors is turned off.
+                    Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                    to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed
+                    </p>
+                </div>
+  
+                <div class="container-four">
+                  <a href="#" class="linker">  
+                   <img src="image/mac (7).jpg"> 
+                   <p class="para">These instructions are for Photoshop</p></a>
+                   <p class="date">January 10, 2023</p>
+                   <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                    CS4 is very similar.
+                    Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                    Monitor RGB.
+                    Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                    Working RGB. This must be done for every single document you work on.
+                    Step 3: Ensure View → Proof Colors is turned off.
+                    Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                    to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed</p>
+                </div>
+                
+                <div class="container-five">
+                  <a href="#" class="link"> 
+                  <img src="image/mac (7).jpg" alt="">
+                  <p class="par">These instructions are for Photoshop </p></a>
+                  <p class="date">January 10, 2023</p>
+                  <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                    CS4 is very similar.
+                    Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                    Monitor RGB.
+                    Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                    Working RGB. This must be done for every single document you work on.
+                    Step 3: Ensure View → Proof Colors is turned off.
+                    Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                    to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed
+                    </p>
+                </div>
+                    <div class="container-six">
+                      <a href="#" class="linker">  
+                       <img src="image/mac (7).jpg"> 
+                       <p class="para">These instructions are for Photoshop</p></a>
+                       <p class="date">January 10, 2023</p>
+                       <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                        CS4 is very similar.
+                        Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                        Monitor RGB.
+                        Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                        Working RGB. This must be done for every single document you work on.
+                        Step 3: Ensure View → Proof Colors is turned off.
+                        Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                        to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed</p>
+                    </div>
+                    <div class="container-six">
+                      <a href="#" class="linker">  
+                       <img src="image/mac (7).jpg"> 
+                       <p class="para">These instructions are for Photoshop</p></a>
+                       <p class="date">January 10, 2023</p>
+                       <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                        CS4 is very similar.
+                        Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                        Monitor RGB.
+                        Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                        Working RGB. This must be done for every single document you work on.
+                        Step 3: Ensure View → Proof Colors is turned off.
+                        Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                        to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed</p>
+                    </div>
+                    <div class="container-six">
+                      <a href="#" class="linker">  
+                       <img src="image/mac (7).jpg"> 
+                       <p class="para">These instructions are for Photoshop</p></a>
+                       <p class="date">January 10, 2023</p>
+                       <p>These instructions are for Photoshop CS5 on Mac and Windows. Setting up
+                        CS4 is very similar.
+                        Step 1: Go to Edit → Color Settings and set the working space for RGB to
+                        Monitor RGB.
+                        Step 2: Open a document and go to Edit → Assign Profile, then set it to
+                        Working RGB. This must be done for every single document you work on.
+                        Step 3: Ensure View → Proof Colors is turned off.
+                        Step 4: When saving files with Save for Web & Devices, ensure that Convert
+                        to sRGB is turned off. If youre saving a JPEG file, then also turn off Embed</p>
+                    </div>
+              </div> 
+            </div>
+
+            <div class="video-container">
+              <iframe width="960" height="615" src="https://www.youtube.com/embed/https://youtu.be/vpvtZZi5ZWk" frameborder="0" allowfullscreen></iframe>
+            </div> 
+
+            <div class="signup-form">
+              <h2>Sign Up</h2>
+              <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>   
+      <br><br>
+      
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <h1>WEBGATE</h1>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>123 Main St.</p>
+                <p>Anytown, USA 12345</p>
+                <p>Email: info@webscience.com</p>
+                <p>Phone: 555-555-5555</p>
+            </div>
+            <div class="social-media">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 WEBGATE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+
+        window.addEventListener('scroll', function() {
+          var header = document.querySelector('header');
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          var ulElements = header.querySelectorAll('ul li a'); // Select all <a> elements within <li> elements in the header
+          var logo = document.querySelector('.logo h1'); // Select the logo element
+      
+          if (scrollTop > 0) {
+            header.classList.add('fixed');
+            header.style.backgroundImage = 'none'; // Remove the background image when the header is fixed
+            header.style.backgroundColor = 'white'; // Set the background color to a desired value when scrollTop is greater than 0
+            ulElements.forEach(function(element) {
+              element.style.color = 'black'; // Set text color to white when the header is fixed
+            });
+            logo.style.color = '#ffffff'; // Set logo text color to white when the header is fixed
+          } else {
+            header.classList.remove('fixed');
+            header.style.backgroundImage = "url('image/blg1.jpg')"; // Set the background image path when scrollTop is 0
+            header.style.backgroundColor = 'hwb(0 100% 0%)'; // Set the background color to the original color when scrollTop is 0
+            ulElements.forEach(function(element) {
+              element.style.color = '#242222'; // Set text color to the original color when the header is not fixed
+            });
+            logo.style.color = '#000000'; // Set logo text color to the original color when the header is not fixed
+          }
+          
+          if (!header.parentNode) {
+            header.remove(); // Remove the header element from the DOM if it has a parent node
+          }
+        });
+      </script>
+        
+
+    </body>
+</html>
+
+

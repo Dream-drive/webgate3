@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+/* Header styles */
+
+
+
+header {
+    background-image: url('image/woman.jpg');
+  	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 	height: 120px;
+  	transition: all 0.3s ease-in-out;
+  	position: fixed;
+  	top: 0;
+ 	left: 0;
+  	width: 100%;
+ 	z-index: 100; 
+}
+
+header, .logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.webgate{
+    width: 350px;
+    margin-left: -80px;
+	
+}
+header nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 20px;
+}
+
+header nav ul li {
+	margin-right: 20px;
+    margin-left: 1px;
+  }
+  
+  header nav ul li:last-child {
+	margin-right: 0;
+  }
+  
+ header nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  header nav ul li a:hover {
+	color: #5eb2e0;
+  }
+
+  header.fixed {
+	background-color: #061880;
+	height: 92px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10px;
+    
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	margin-left: auto;
+	position: absolute;
+  }
+
+
+  .hero{
+    background-image: url('image/woman.jpg');
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .cantact{
+    width: 70%;
+    height: 400px;
+    margin-left: 30%;
+
+  }
+
+  
+#contact {
+  background-color: #ffffff;
+  padding: 50px;
+  margin-top: -20%;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contact p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+#contact form {
+    display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  border: 1px solid #0066cc;
+}
+
+#contact form button[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact form button[type="submit"]:hover {
+  background-color: #0052cc;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #0066cc;
+}
+
+.privacy-policy {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.privacy-policy h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.privacy-policy p {
+  font-size: 18px;
+}
+
+.htwo{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    text-align: left;
+   
+}
+
+.container-one{
+    margin-top: 40px;
+    width: 40%;
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 80px;
+}
+.container-two{
+    width: 40%;
+    display: inline-block;
+}
+
+.container-one img{
+    width: 100%;
+    height: 300px;
+}
+.container-two img{
+width: 100%;
+height: 300px;
+}
+
+.container-one a p {
+    text-align: left;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  label {
+    margin-right: 10px;
+  }
+
+  input[type="email"] {
+    flex: 1;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .subscribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #93949b;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    
+  }
+
+
+
+/* Footer styles */
+
+footer {
+  background-color: #f9f9fa;
+  color: #000000;
+  padding: 50px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+  margin-top: 70px;
+  
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo h1{
+  position: absolute;
+  left: 15%;
+  font-size: 38px;
+}
+
+.contact-us p {
+  margin: 10px 0;
+}
+.contact-us h3{
+  position: absolute;
+    top: 330%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+}
+.social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background-color: #f9f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+
+
+</style>
+
+
+<header>
+
+    <a href="index.html">
+        <img src="image/logo.png" class="webgate">
+    </a>
+
+    <div class="logo">
+        <nav>
+            <ul>
+              <li><a href="service.html">Services</a></li>
+				    <li><a href="courses.html">Courses</a></li>
+				    <li><a href="about.html">About</a></li>
+				    <li><a href="contact.html">Contact</a></li>
+				    <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+  
+<section class="hero">
+           
+    <div><br><br>
+        
+    </section>
+
+
+    <section id="contact">
+        <img src="image/cant.png" class="cantact" alt="">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us to discuss your website <br/> development needs or to learn more about our courses.</p>
+        
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <button type="submit">Send</button>
+        </form>
+      
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:dennispolley996@gmail.com">dennispolley996@gmail.com</a></p>
+          <p><a href="tel:0542367766">0542367766</a></p>
+          <p><a href="tel:0542367766">0573479169</a></p>
+          <p><a href="tel:0542367766">0205179906</a></p>
+        </div>
+      
+        <div class="privacy-policy">
+          <h3>Privacy Policy</h3>
+          <p>We take your privacy seriously and will never share your information with third parties.</p>
+        </div>
+
+        <div>
+            <h2 class="htwo">UPCOMING EVENTS</h2>
+        </div>
+
+        <div class="container-one">
+            <img src="image/team.jpg" alt="image of a team">
+            <a href="https://measuringu.com/classification-agreement-between-ux-researchers-and-chatgpt/">
+            <p>Can ChatGPT Replace UX Researchers?
+                An Empirical Analysis of Comment Classifications</p></a>
+        </div>
+        <div class="container-two">
+            <img src="image/team.jpg" alt="">
+            <a href="https://measuringu.com/classification-agreement-between-ux-researchers-and-chatgpt/">
+            <p>Can ChatGPT Replace UX Researchers?
+                An Empirical Analysis of Comment Classifications</p></a>
+        </div>
+        
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Subscribe" class="subscribe-button">
+          </div>
+        </form>
+          
+        
+              
+        <footer>
+          <div class="footer-content">
+              <div class="logo">
+                  <h1>WEBGATE</h1>
+              </div>
+              <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Sekondi, Lands Commission Area</p>
+                <p>Sekondi-Takoradi, Ghana</p>
+                <p><a href="mailto:dennispolley996@gmail.com">
+					        Dennispolley996@gmail.com</a></p>
+                <p><a href="tel:0542367766">0542367766</a></p>
+                <p><a href="tel:0542367766">0573479169</a></p>
+                <p><a href="tel:0542367766">0205179906</a></p>
+            </div>
+              <div class="social-media">
+                  <h3>Connect with Us</h3>
+                  <ul>
+                      <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+                      <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                      <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2023 WEBGATE. All rights reserved.</p>
+          </div>
+      </footer>
+
+
+           
+      </section>
+      
+   
+      <script>
+        window.addEventListener('scroll', function() {
+          var header = document.querySelector('header');
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          var ulElements = header.querySelectorAll('ul li a');
+          var logo = document.querySelector('.logo');
+      
+          if (scrollTop > 0) {
+            header.classList.add('fixed');
+            header.style.backgroundImage = 'none';
+            header.style.backgroundColor = 'white';
+            ulElements.forEach(function(element) {
+              element.style.color = 'black';
+            });
+            logo.style.color = 'black';
+          } else {
+            header.classList.remove('fixed');
+            header.style.backgroundImage = 'url("image/mac (6).jpg")'; // Set the background image path when scrollTop is 0
+            header.style.backgroundColor = 'none';
+            ulElements.forEach(function(element) {
+              element.style.color = '#242222';
+            });
+            logo.style.color = 'pink';
+          }
+      
+          if (!header.parentNode) {
+            header.remove();
+          }
+        });
+      </script>
+      
+      
+      
+      
+</body>
+</html>

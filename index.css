@@ -1,0 +1,649 @@
+/*Global Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	
+}
+
+
+/*Header Section*/
+header {
+	background-image: url('image/on.pg');
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	height: 120px;
+	transition: all 0.3s ease-in-out;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+header, .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.logo {
+	width: 250px;
+	margin-left: -80px;
+}
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	margin-left: 80px;
+}
+header nav ul li {
+	margin-right: 20px;
+}
+header nav ul li:last-child {
+	margin-right: 0;
+}
+header nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+	color: #5eb2e0;
+}
+header.fixed {
+	background-color: #041263;
+	height: 92px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10px;
+}
+nav li {
+	margin-left: 20px;
+}
+nav a {
+	font-size: 1.2rem;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-left: auto;
+	position: absolute;
+}
+
+
+/*Hero Section */
+.hero {
+	background-image: url("image/one1.jpg");
+	padding: 50px;
+	display: flex;
+	width: 100%;
+	height: 500px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	position: relative;
+	
+	z-index: 1;
+}
+.hero-container{
+	justify-content: center;
+	align-items: center;
+}
+
+#welcome {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	
+}
+ #hero-paragraph{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+
+}
+.cta-button {
+	background-color: #000000;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease;
+	display: inline-block;
+}
+.hero-button {
+	background-color: #201c1c;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	transition: background-color 0.2s ease;
+	display: inline-block;
+	position: absolute;
+	right: 44%;
+}
+.hero-button:hover{
+	background-color: white;
+	color: black;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*Advert Section*/
+
+.advert {
+	background-color: #134898;
+	width: 70%;
+	height: 100px;
+	border-radius: 5px;
+	margin: 0 auto;
+	position: relative;
+	top: -40px;
+	z-index: 2;
+}
+.advert-heading {
+	color: white;
+	padding-left: 10px;
+}
+.advert-paragraph {
+	font-size: 1rem;
+	color: #ffffff;
+	margin-bottom: 20px;
+	display: block;
+	padding-left: 10px;
+}
+.now-open {
+	background-color: rgba(226, 66, 66, 0.801);
+	color: white;
+	width: 100px;
+	border-radius: 3px;
+	position: relative;
+	top: -105px;
+	left: 0;
+	padding-left: 12px;
+}
+.cta-button-two{
+	display: inline-block;
+	background-color: #201c1c;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease-in-out;
+	position: absolute;
+	top: 23%;
+	right: 7%;
+	width: 120px;
+}
+.cta-button-two:hover {
+	background-color: #0056b3;
+}
+
+/*Main Paragraph Section*/
+
+
+.main-paragraph {
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+.main-paragraph b {
+	color: rgb(0, 0, 0);
+	font-size: 26px;
+}
+
+
+/*Home Courses Section*/
+ 
+.p1{
+    position: absolute;
+	left: 30px;
+	color: rgb(24, 57, 118);
+	font-size: 22px;
+	top: 1193px;
+	text-decoration: solid;
+}
+
+.b1{
+    position: relative;
+	left: 140px;
+	top: -15px;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+	background-color: #4666f6;	
+	color: white;
+	border: none;
+	border-radius: 3px;
+	transition-duration: 0.3s;
+}
+
+.b1:hover{
+background-color: rgb(202, 190, 190);
+color: black;
+}
+
+
+.services {
+margin: 20px;
+margin-bottom: 20px;
+max-width: 400px;
+background-color: #fff;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+display: inline-block;
+}
+.services img {
+width: 95%;
+height: 150px;
+object-fit: cover;
+}
+.services h3 {
+font-size: 1.5rem;
+color: #333;
+margin: 20px;
+}
+.services p {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 20px;
+    }
+
+
+.service-section h2{
+font-size: 2.2rem;
+text-align: center;
+}
+
+.cta-button {
+		display: inline-block;
+		background-color: #000000;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
+		text-transform: capitalize;
+		font-size: 1.2rem;
+		transition: background-color 0.3s ease-in-out;
+		margin-bottom: 20px;
+		margin-left: 110px
+}
+
+
+.image-box {
+	position: relative; /* Make the container the reference for absolute positioning */
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.background-image {
+	width: 100%;
+	height: 100%;
+}
+
+.top-image {
+	position: absolute; /* Position the image on top of the background image */
+	bottom: 100px; /* Adjust top position as needed */
+	left: 520px; /* Adjust left position as needed */
+	width: 100px;
+	height: 100px;
+	z-index: 1; /* Ensure the top image appears above the background image */
+}
+
+img.webserver-icon{
+	z-index: 10;
+}
+.headbox{
+	color: white;
+	font-size: 43px;
+	position: absolute; /* Position the image on top of the background image */
+	bottom: 50px; /* Adjust top position as needed */
+	left: 650px; /* Adjust left position as needed */
+	z-index: 1; /* Ensure the top image appears above the background image */
+}
+.gate{
+	color: lightblue;
+	font-size: 39px;
+	position: absolute; /* Position the image on top of the background image */
+	top: 10px; /* Adjust top position as needed */
+	left: 10px; /* Adjust left position as needed */
+	z-index: 1; /* Ensure the top image appears above the background image */
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.form-div{
+	background-color: rgba(251, 251, 252, 0.897);
+	height: 600px;
+}
+.form-heading{
+	text-align: center;
+	font-size: 40px;
+	margin-top: 70px;
+	margin-bottom: 80px;
+	padding: 50px;
+	color: black;
+}
+
+form {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 10px;
+	
+  }
+  
+  label {
+	font-size: 16px;
+	
+  }
+  
+  input {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #234b86;
+	margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  .confirm-password {
+	margin-top: 10px;
+  }
+  
+  
+
+
+
+.service-box{
+	background-color: white;
+	display: flex;
+	flex-direction: column; /* Change to column */
+	align-items: center; /* Center the content horizontally */
+	padding: 20px;
+	width: 100%;
+	height: 600px;
+	margin-top: 60px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.boxes{
+	margin-top: 100px; 
+	display: flex;
+	flex-direction: row;
+	justify-content: center; /* Center the boxes horizontally */
+	height: 250px;
+}
+
+.box-one{
+	width: 415px;
+	background-color: rgb(3, 3, 82);
+	padding: 30px;
+	margin-bottom: 10px;
+	height: 250px;
+}
+.box-two{
+	width: 415px;
+	background-color: rgb(2, 2, 48);
+	padding: 30px;
+	margin-left: 1px;
+	margin-bottom: 10px;
+	height: 250px;
+
+}
+.box-three{
+	width: 415px;
+	background-color: rgb(3, 3, 82);
+	padding: 30px;
+	margin-left: 1px;
+	margin-right: 45px;
+	margin-bottom: 10px;
+	height: 250px;
+}
+
+.head-div{
+  width: 45px;
+  background-color: aqua;
+  border-radius: 90px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.heading-box{
+  color: black;
+  text-align: center;
+}
+
+/* Additional style for the top paragraph */
+.top {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  color: black;
+  margin-right: 90px;
+
+}
+.down {
+  text-align: center;
+  font-size: 55px;
+  margin-top: 30px;
+  color: black;
+  margin-right: 20px;
+
+}
+.service-box, p{
+	color: white;
+	
+}
+
+ .box-two, p{
+	color: aqua;
+}
+
+
+/*Testimonials section*/
+
+
+.testimonial-text-container{
+	background-color: white;
+	text-align: center;
+	margin-top: 90px;
+	width: 1300px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 10px;
+}
+.testimonial-paragraph{
+	margin-left: 40px;
+	font-size: 20px;
+	color: black;
+
+}
+
+.testimonial-heading{
+text-align: center;
+margin-top: 90px;
+font-size: 42px;
+color: #04174bda;
+}
+
+em{
+font-size: 30px;
+}
+.angle-one{
+width: 50px;
+margin-right: 2px;
+}
+.angle-two{
+width: 50px;
+margin-left: 30px;
+}
+
+
+
+
+
+
+/*Courses  Section Start*/
+.par{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 90px;
+	margin-bottom: 50px;
+	color: #0e162bda;
+}
+.par b{
+	font-size: 24px;
+}
+.courses h2{
+	color: #041263;
+    font-size: 2.3rem;
+    text-align: center;
+    position: relative;
+    top: 5px;
+	margin-bottom: 20px;
+}
+  
+.course {
+    margin: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.course img {
+	width: 95%;
+	height: 150px;
+	object-fit: cover;
+}
+.course h3 {
+font-size: 1.5rem;
+color: #333;
+margin: 20px;
+}
+.course p {
+	font-size: 1.2rem;
+	color: #777;
+	margin: 20px;
+}
+
+
+/* Footer styles */
+
+footer {
+background-color: #041263;
+color: #fff;
+padding: 50px;
+}
+
+.footer-content, .logo-head, h1{
+	color: lightblue;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.contact-us p {
+margin: 10px 0;
+color: white;
+}
+.contact-us h3 {
+color: white;
+}
+
+.social-media li {
+display: inline-block;
+margin-right: 10px;
+}
+.social-media h3 {
+color: white;
+}
+
+.social-media img {
+width: 30px;
+height: 30px;
+object-fit: cover;
+border-radius: 50%;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.2s ease-in-out;
+color: lightblue;
+}
+
+.social-media img:hover {
+transform: scale(1.1);
+}
+
+.footer-bottom {
+background-color: #041263;
+padding: 20px;
+text-align: center;
+}
+
+.footer-bottom p {
+color: #fff;
+font-size: 0.9rem;
+}
+
+
+
+
+
+
+  /*
+  
+ 
+#container {
+	position: relative;
+	width: 300px;
+	height: 285px;
+	margin-left: 150px;
+	overflow: hidden;
+	bottom: -50px;
+
+}
+#images {
+	position: absolute;
+	width: 400%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+#images img {
+	width: 25%;
+	height: 100%;
+	float: left;
+	border-radius: 20px;
+}
+  */
